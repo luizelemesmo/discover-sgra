@@ -89,6 +89,15 @@ export default function EventsPage() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        {/* Disclaimer */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          className="mb-8 px-4 py-3 bg-violet-50 border border-violet-200 rounded-xl text-violet-700 font-sans text-[12.5px] leading-snug"
+        >
+          Agenda ilustrativa de exemplo — datas, horários e programação devem ser confirmados junto à Prefeitura e à Secretaria de Cultura de São Gonçalo do Rio Abaixo.
+        </motion.div>
+
         {/* Filters */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
