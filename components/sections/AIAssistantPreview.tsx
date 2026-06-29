@@ -5,18 +5,18 @@ import Link from "next/link";
 import { Bot, MapPin, Sparkles, ArrowRight, MessageSquare } from "lucide-react";
 
 const mockMessages = [
-  { role: "user", text: "O que posso fazer neste fim de semana em SGRA?" },
+  { role: "user", text: "Monte um roteiro cultural por São Gonçalo do Rio Abaixo" },
   {
     role: "assistant",
-    text: "Tenho o roteiro perfeito para você! 🌿 Comece com uma trilha no Parque Estadual do Rio Doce pela manhã, depois vá à Cachoeira Véu de Noiva para um banho refrescante. No domingo, explore o centro histórico e encerre com o pôr do sol no Mirante da Pedra Redonda.",
+    text: "Tenho o roteiro perfeito! ⛪ Comece pela Igreja Matriz de São Gonçalo do Amarante e pela Igreja de Nossa Senhora do Rosário. Em seguida, suba até a Igreja de Santa Efigênia e visite a Estátua do Padre João. Se tiver mais tempo, vale fechar o dia na Estação Ambiental de Peti.",
   },
 ];
 
 const suggestions = [
-  "Quero conhecer a história",
-  "Atrações naturais",
-  "O que comer em SGRA?",
-  "Roteiro de 2 dias",
+  "Quero conhecer igrejas históricas",
+  "Quem foi o Padre João?",
+  "O que é a Estação de Peti?",
+  "Roteiro de uma tarde",
 ];
 
 export default function AIAssistantPreview() {

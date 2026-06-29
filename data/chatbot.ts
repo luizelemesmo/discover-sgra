@@ -6,81 +6,87 @@ export interface BotResponse {
 }
 
 export const suggestedPrompts = [
-  "Quero conhecer a história da cidade",
-  "Sugira atrações naturais para visitar",
-  "O que fazer neste fim de semana?",
+  "Quero conhecer igrejas históricas da cidade",
+  "Monte um roteiro cultural por São Gonçalo do Rio Abaixo",
+  "Quais pontos posso visitar em uma tarde?",
+  "Quem foi o Padre João?",
+  "O que é a Estação Ambiental de Peti?",
   "Onde comer comida mineira típica?",
-  "Há trilhas para iniciantes?",
   "Quais eventos estão acontecendo?",
-  "Monte um roteiro de 2 dias para mim",
-  "Quero ver cachoeiras na região",
 ];
 
 export const botResponses: BotResponse[] = [
   {
-    trigger: ["história", "histórica", "museu", "colonial", "patrimônio"],
+    trigger: ["igreja", "igrejas", "histórica", "histórias", "colonial", "religios"],
     response:
-      "São Gonçalo do Rio Abaixo tem uma história fascinante! 🏛️\n\nA cidade foi fundada no século XVIII e guarda um rico acervo histórico. Recomendo:\n\n• **Igreja Nossa Senhora da Conceição** — Arquitetura barroca colonial deslumbrante\n• **Museu Histórico Municipal** — Fotografias e artefatos do século XIX\n• **Fazenda Histórica Pedra Branca** — Sede colonial tombada como patrimônio\n\nA **Rota Histórica** conecta todos esses pontos em um dia completo de imersão cultural. Quer que eu monte um itinerário detalhado?",
-    suggestions: ["Monte a rota histórica completa", "Horários do museu", "Como chegar à fazenda histórica"],
-    attractions: ["museu-historico-sgra", "igreja-nossa-senhora-conceicao", "fazenda-historica-pedra-branca"],
+      "São Gonçalo do Rio Abaixo guarda um patrimônio religioso e histórico precioso! ⛪\n\nAs três igrejas históricas do centro são imperdíveis:\n\n• **Igreja Matriz de São Gonçalo do Amarante** — Erguida em 1733, com retábulo colonial e o Cruzeiro centenário de 1871\n• **Igreja de Nossa Senhora do Rosário** — Construída pela comunidade negra no início do século XVIII\n• **Igreja de Santa Efigênia** — Conhecida como \"Igreja do Padre João\", no alto de uma colina com vista da cidade\n\nO **Roteiro Histórico e Religioso** conecta as três em uma caminhada de meio dia. Quer que eu monte o itinerário completo?",
+    suggestions: ["Monte o roteiro histórico completo", "Quem foi o Padre João?", "Horários de visitação das igrejas"],
+    attractions: ["igreja-matriz-sao-goncalo-amarante", "igreja-nossa-senhora-rosario", "igreja-santa-efigenia"],
   },
   {
-    trigger: ["natureza", "natural", "parque", "trilha", "mata", "verde", "floresta"],
+    trigger: ["roteiro cultural", "cultural", "centro", "cultura"],
     response:
-      "A natureza de São Gonçalo do Rio Abaixo é simplesmente espetacular! 🌿\n\nTemos opções incríveis:\n\n• **Parque Estadual do Rio Doce** — Maior reserva de Mata Atlântica do estado, com trilhas para todos os níveis\n• **Cachoeira Véu de Noiva** — Queda de 45 metros com piscina natural\n• **Mirante da Pedra Redonda** — Vista panorâmica de 360° do Vale do Rio Doce\n• **Circuito das Pedras** — Trilha entre formações rochosas milenares\n\nQual tipo de experiência você prefere? Aventura intensa, contemplação tranquila ou algo intermediário?",
-    suggestions: ["Trilhas para iniciantes", "Quero ver cachoeiras", "Melhor época para visitar"],
-    attractions: ["parque-estadual-rio-doce", "cachoeira-veu-noiva", "mirante-pedra-redonda"],
+      "Ótima escolha! O **Roteiro Cultural pelo Centro** é perfeito para sentir o ritmo da cidade. 🎨\n\n**Paradas sugeridas:**\n\n• **Praça da Matriz** — coração social e religioso da cidade\n• **Centro Cultural São Gonçalo do Rio Abaixo** — exposições e memória local\n• **Comércio e casario do centro** — arquitetura tradicional preservada\n• **Parada gastronômica** — pão de queijo e doces caseiros\n\nLeva cerca de 2 a 3 horas, em ritmo tranquilo. Quer que eu sugira o melhor horário para fazer esse passeio?",
+    suggestions: ["Melhor horário para o passeio", "O que tem no Centro Cultural?", "Outras opções de roteiro"],
+    attractions: ["centro-cultural-sgra", "gastronomia-mineira-local"],
   },
   {
-    trigger: ["cachoeira", "queda", "água", "banho", "nadar"],
+    trigger: ["tarde", "poucas horas", "rápido", "curto"],
     response:
-      "Ótima escolha! A **Cachoeira Véu de Noiva** é um dos maiores tesouros naturais da região! 💧\n\n✨ **Destaques:**\n• Queda impressionante de **45 metros**\n• Piscina natural para banho refrescante\n• Trilha de acesso de ~2km entre a Mata Atlântica\n• Mirante panorâmico para fotografias\n\n📍 **Como chegar:** Distrito de Carrapato, a 12km do centro\n🕐 **Horário:** Todos os dias, 07h–18h\n💰 **Valor:** R$ 10 (estacionamento)\n\n**Dica:** Vá nos meses de novembro a março quando a cachoeira está em plena vazão!",
-    suggestions: ["Outras cachoeiras na região", "Monte a rota da natureza", "Há guias disponíveis?"],
-    attractions: ["cachoeira-veu-noiva", "parque-estadual-rio-doce"],
+      "Para quem tem só uma tarde livre, dá para conhecer bastante do centro histórico! 🕐\n\n**Sugestão de roteiro expresso (3–4h):**\n\n1. **Igreja Matriz de São Gonçalo do Amarante** — 45min\n2. **Igreja de Nossa Senhora do Rosário** — 30min\n3. **Igreja de Santa Efigênia** — 45min (com a subida até o adro)\n4. **Estátua do Padre João** — 30min\n\nTodos os pontos ficam próximos e podem ser feitos a pé, no centro da cidade. Quer que eu monte esse roteiro em detalhes?",
+    suggestions: ["Monte esse roteiro em detalhes", "Tenho o dia todo, não só a tarde", "Quero algo com natureza"],
+    attractions: ["igreja-matriz-sao-goncalo-amarante", "igreja-nossa-senhora-rosario", "igreja-santa-efigenia", "estatua-padre-joao"],
   },
   {
-    trigger: ["fim de semana", "final de semana", "sábado", "domingo", "2 dias", "dois dias"],
+    trigger: ["padre joão", "padre", "joão", "milagre", "estátua"],
     response:
-      "Montei o roteiro perfeito de fim de semana para você! 🗓️\n\n**Sábado:**\n🌿 **Manhã** — Trilha no Parque Estadual do Rio Doce\n💧 **Tarde** — Banho na Cachoeira Véu de Noiva\n🍽️ **Noite** — Jantar no Restaurante Sabor Mineiro\n\n**Domingo:**\n🏛️ **Manhã** — Igreja Nossa Senhora da Conceição + Museu Histórico\n🛒 **Almoço** — Buffet mineiro + Mercado Municipal\n🌅 **Tarde** — Pôr do sol no Mirante da Pedra Redonda\n\nEste roteiro combina natureza, história e gastronomia de forma equilibrada. Quer mais detalhes sobre alguma parada?",
-    suggestions: ["Onde se hospedar?", "Detalhes da trilha", "Reservar mesa no restaurante"],
-    attractions: ["parque-estadual-rio-doce", "cachoeira-veu-noiva", "mirante-pedra-redonda"],
+      "O Padre João é uma das figuras mais marcantes da história de São Gonçalo! 🙏\n\nO Cônego João José Marques Guimarães assumiu a Paróquia em 1924 e se dedicou à comunidade por cerca de cinco décadas, até seu falecimento em 1984. Sua memória é tão presente que está ligada até ao processo de emancipação política do município, em 1962.\n\nHoje ele é homenageado por dois marcos:\n\n• **Estátua do Padre João** — memorial de 20 metros no bairro Patrimônio\n• **Igreja de Santa Efigênia** — capela erguida a seu pedido, conhecida como \"Igreja do Padre João\"\n\nMuitos visitantes consideram a visita ao memorial um momento de reflexão e fé. Quer saber como chegar até lá?",
+    suggestions: ["Como chegar à Estátua do Padre João", "Conhecer a Igreja de Santa Efigênia", "Monte um roteiro histórico"],
+    attractions: ["estatua-padre-joao", "igreja-santa-efigenia"],
   },
   {
-    trigger: ["gastronomia", "comida", "comer", "restaurante", "mineira", "culinária", "almoço", "jantar"],
+    trigger: ["peti", "estação ambiental", "natureza", "trilha", "represa", "mata"],
     response:
-      "A gastronomia de São Gonçalo do Rio Abaixo é uma celebração da culinária mineira! 🍽️\n\n**Destaque absoluto:**\n🏆 **Restaurante Sabor Mineiro** — Referência da cidade com receitas centenárias. O feijão tropeiro e o frango ao molho pardo são imperdíveis!\n\n**Também recomendo:**\n• **Queijaria Artesanal Serra Verde** — Queijo artesanal premiado\n• **Mercado Municipal** — Produtos locais e petiscos\n• **Cachaçaria Tradição** — Degustação de cachaças artesanais\n\n**Dica especial:** Não deixe de provar o doce de leite artesanal da região — é de outro nível! 😍",
-    suggestions: ["Horários do restaurante", "Rota gastronômica completa", "Feira de produtos locais"],
-    attractions: ["restaurante-sabor-mineiro"],
+      "A Estação Ambiental de Peti é o grande tesouro natural de São Gonçalo do Rio Abaixo! 🌿\n\n**Destaques:**\n• Mais de **500 hectares** de mata preservada\n• Represa e cachoeira históricas, ligadas a uma antiga usina hidrelétrica do início do século XX\n• Trilhas para caminhada, incluindo um percurso acessível para deficientes visuais\n• Programas de educação ambiental e pesquisa científica\n\nEm 2026, a Estação foi oficialmente tombada como patrimônio cultural do município. O **Roteiro Estação de Peti e Arredores** dedica uma tarde inteira a esse passeio. Quer os detalhes?",
+    suggestions: ["Monte o roteiro de Peti", "Como agendar a visita?", "Outras opções de natureza"],
+    attractions: ["estacao-ambiental-peti"],
+  },
+  {
+    trigger: ["gastronomia", "comida", "comer", "restaurante", "mineira", "culinária", "pão de queijo", "doce"],
+    response:
+      "A tradição mineira está bem viva em São Gonçalo do Rio Abaixo! 🧀\n\nPadarias, confeitarias e cozinhas de família mantêm vivos os sabores da região: pão de queijo, pastéis, empadas e doces caseiros fazem parte do dia a dia local e das festas religiosas ao longo do ano.\n\nUma boa pedida é incluir uma parada gastronômica no **Roteiro Cultural pelo Centro**, logo após visitar o Centro Cultural. Quer que eu inclua isso no seu roteiro?",
+    suggestions: ["Incluir no roteiro cultural", "Quais doces são típicos?", "Quero conhecer as igrejas também"],
+    attractions: ["gastronomia-mineira-local"],
+  },
+  {
+    trigger: ["evento", "eventos", "programação", "agenda", "festival", "festa"],
+    response:
+      "A agenda cultural de São Gonçalo do Rio Abaixo costuma reunir fé, música e tradição ao longo do ano! 🎉\n\nFestejos religiosos, mostras culturais e celebrações populares acontecem principalmente em torno das datas do padroeiro e das tradições locais. Para não perder nada, vale visitar a página de **Eventos** e confirmar as datas atualizadas direto com a Prefeitura ou a Paróquia São Gonçalo.\n\nQuer que eu te mostre os próximos eventos cadastrados na plataforma?",
+    suggestions: ["Ver agenda de eventos", "Quero conhecer a cidade primeiro", "Monte um roteiro para mim"],
+  },
+  {
+    trigger: ["roteiro", "itinerário", "planejar", "viagem", "visita", "passeio"],
+    response:
+      "Vou te ajudar a planejar a visita perfeita a São Gonçalo do Rio Abaixo! ✈️\n\nTemos 4 roteiros temáticos prontos:\n\n⛪ **Roteiro Histórico e Religioso** — meio dia, fácil\n🏛️ **Roteiro Cultural pelo Centro** — meio dia, fácil\n🗿 **Roteiro Memória e Patrimônio** — 1 dia, moderado\n🌿 **Roteiro Estação de Peti e Arredores** — meio dia, moderado\n\nMe conta um pouco mais:\n• Quanto tempo você tem disponível?\n• Prefere história e fé, natureza ou um pouco de cada?\n\nAssim posso recomendar o roteiro ideal para você!",
+    suggestions: ["Quero o roteiro histórico", "Quero o roteiro de Peti", "Tenho o dia todo disponível"],
   },
   {
     trigger: ["iniciante", "fácil", "família", "criança", "idoso", "acessível"],
     response:
-      "Para quem busca experiências tranquilas e acessíveis, temos ótimas opções! 👨‍👩‍👧‍👦\n\n**Ideais para iniciantes e famílias:**\n\n• **Museu Histórico Municipal** — Visita tranquila, sem esforço físico\n• **Igreja Nossa Senhora da Conceição** — Patrimônio barroco, no centro da cidade\n• **Restaurante Sabor Mineiro** — Refeição completa em ambiente familiar\n• **Parque Estadual do Rio Doce** — Trilhas de nível fácil com guias\n\n**Trilha recomendada para iniciantes:**\nA Trilha das Borboletas no Parque Estadual tem apenas 2km e é plana, com paisagens incríveis. Perfeita para crianças e idosos! 🦋",
-    suggestions: ["Programação infantil", "Outros pontos no centro", "Parque estadual para famílias"],
-    attractions: ["museu-historico-sgra", "parque-estadual-rio-doce", "restaurante-sabor-mineiro"],
-  },
-  {
-    trigger: ["evento", "eventos", "programação", "agenda", "festival", "show"],
-    response:
-      "A agenda cultural de São Gonçalo do Rio Abaixo está sempre movimentada! 🎉\n\n**Próximos destaques:**\n\n🎊 **Festa de São Gonçalo** (10–17 Jul) — A maior celebração do ano!\n🍽️ **Festival Gastronômico do Vale** (22–24 Ago) — Para os amantes da gastronomia\n🎨 **Mostra de Arte e Cultura** (5–12 Set) — Arte em todos os espaços da cidade\n🌙 **Trilha Noturna sob a Lua Cheia** (23 Jul) — Experiência única!\n🎵 **Concerto Música das Gerais** (9 Ago) — Orquestra ao ar livre gratuita\n\nVisita nossa página de Eventos para a agenda completa!",
-    suggestions: ["Detalhes da Festa de São Gonçalo", "Festival gastronômico", "Ingressos dos eventos"],
-  },
-  {
-    trigger: ["roteiro", "itinerário", "planejar", "viagem", "visita"],
-    response:
-      "Vou te ajudar a planejar a viagem perfeita! ✈️\n\nTemos 4 roteiros temáticos prontos:\n\n🏛️ **Rota Histórica** — 1 dia, fácil\n🌿 **Rota da Natureza** — 1-2 dias, moderado\n🍽️ **Rota Gastronômica** — 1 dia, fácil\n⭐ **Experiência de Fim de Semana** — 2 dias, fácil\n\nMe conta um pouco mais sobre você:\n• Quantos dias tem disponível?\n• Prefere natureza, história ou gastronomia?\n• Vai sozinho, em casal ou com família?\n\nAssim posso personalizar ainda melhor a sua experiência!",
-    suggestions: ["Quero o roteiro histórico", "Roteiro de natureza", "Experiência completa de 2 dias"],
+      "Para quem busca um passeio tranquilo e acessível, o centro da cidade é a melhor opção! 👨‍👩‍👧‍👦\n\n**Ideais para famílias:**\n\n• **Igreja Matriz de São Gonçalo do Amarante** — acesso fácil, na Praça da Matriz\n• **Centro Cultural São Gonçalo do Rio Abaixo** — visita tranquila e educativa\n• **Sabores da Tradição Mineira** — parada gastronômica com pão de queijo e doces\n\nA **Igreja de Santa Efigênia** tem uma subida mais acentuada até o adro — vale considerar o preparo físico de cada visitante antes de incluir essa parada.",
+    suggestions: ["Roteiro cultural pelo centro", "Vale a pena subir até Santa Efigênia?", "Quero conhecer Peti também"],
+    attractions: ["igreja-matriz-sao-goncalo-amarante", "centro-cultural-sgra", "gastronomia-mineira-local"],
   },
 ];
 
 export const defaultResponse = {
   response:
-    "Olá! Sou o **Assistente Turístico de São Gonçalo do Rio Abaixo** 🌿\n\nPosso te ajudar a descobrir:\n• As melhores **atrações naturais** da região\n• O rico **patrimônio histórico e cultural**\n• A deliciosa **gastronomia mineira**\n• **Eventos e festivais** locais\n• **Roteiros personalizados** para sua visita\n\nO que você gostaria de explorar em SGRA?",
+    "Olá! Sou o **Assistente Turístico de São Gonçalo do Rio Abaixo** 🌿\n\nPosso te ajudar a descobrir:\n• As **igrejas históricas** e o patrimônio religioso da cidade\n• A história do **Padre João** e seu memorial\n• A **Estação Ambiental de Peti**, com represa e trilhas\n• A gastronomia e a cultura local\n• **Roteiros personalizados** para sua visita\n\nO que você gostaria de explorar em São Gonçalo do Rio Abaixo?",
   suggestions: [
-    "Quero conhecer a história",
-    "Atrações naturais",
-    "O que fazer neste fim de semana?",
-    "Melhor gastronomia local",
+    "Quero conhecer igrejas históricas da cidade",
+    "Monte um roteiro cultural por São Gonçalo do Rio Abaixo",
+    "Quais pontos posso visitar em uma tarde?",
+    "O que é a Estação Ambiental de Peti?",
   ],
 };
 
