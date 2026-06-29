@@ -10,12 +10,11 @@ import { Input } from "@/components/ui/input";
 
 const categories: { value: "all" | AttractionCategory; label: string }[] = [
   { value: "all", label: "Todos" },
-  { value: "nature", label: "Natureza" },
-  { value: "history", label: "História" },
-  { value: "adventure", label: "Aventura" },
-  { value: "gastronomy", label: "Gastronomia" },
   { value: "heritage", label: "Patrimônio" },
+  { value: "history", label: "História" },
   { value: "culture", label: "Cultura" },
+  { value: "nature", label: "Natureza" },
+  { value: "gastronomy", label: "Gastronomia" },
 ];
 
 const categoryColors: Record<string, string> = {
