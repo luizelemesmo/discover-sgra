@@ -79,7 +79,7 @@ discover-sgra/
 Hero cinematográfico com imagem full-screen, animações Framer Motion, estatísticas animadas, seções de categorias, atrações em destaque, preview do assistente IA, roteiros, eventos e galeria.
 
 ### 🗺️ Atrações Turísticas
-Listagem com 8 atrações mockadas com busca em tempo real, filtros por categoria e ordenação por avaliação ou nome.
+Listagem com 8 atrações reais do município — incluindo a Igreja Matriz de São Gonçalo do Amarante, a Igreja de Nossa Senhora do Rosário, a Igreja de Santa Efigênia, a Estátua do Padre João e a Estação Ambiental de Peti — com busca em tempo real, filtros por categoria e ordenação por avaliação ou nome.
 
 ### 📍 Detalhe da Atração
 Galeria de imagens, descrição detalhada, destaques, informações de visita (horário, preço, duração, melhor época), mapa mockado e atrações relacionadas.
@@ -91,7 +91,7 @@ Interface de chat com respostas inteligentes baseadas em palavras-chave, prompts
 4 roteiros temáticos com cards expandíveis, linha do tempo de paradas, informações de dificuldade e duração.
 
 ### 📅 Eventos
-Agenda cultural com 6+ eventos mockados, agrupamento por mês, filtros por categoria e destaque para eventos principais.
+Agenda cultural ilustrativa com 6+ eventos de exemplo, agrupamento por mês, filtros por categoria e destaque para eventos principais. Datas e programação devem ser confirmadas junto à Prefeitura.
 
 ### 🖼️ Galeria
 Layout masonry responsivo, 16 imagens categorizadas, filtros por categoria e lightbox com navegação.
