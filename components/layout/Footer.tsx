@@ -9,15 +9,11 @@ const links = {
     { label: "Galeria", href: "/gallery" },
   ],
   descubra: [
-    { label: "Natureza", href: "/attractions?category=nature" },
-    { label: "Cultura & História", href: "/attractions?category=culture" },
-    { label: "Gastronomia", href: "/attractions?category=gastronomy" },
-    { label: "Aventura", href: "/attractions?category=adventure" },
-  ],
-  plataforma: [
-    { label: "Assistente IA", href: "/assistant" },
-    { label: "Recomendações", href: "/routes" },
     { label: "Patrimônio", href: "/attractions?category=heritage" },
+    { label: "Memória & História", href: "/attractions?category=history" },
+    { label: "Cultura", href: "/attractions?category=culture" },
+    { label: "Natureza", href: "/attractions?category=nature" },
+    { label: "Gastronomia", href: "/attractions?category=gastronomy" },
   ],
 };
 
@@ -90,7 +86,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-2 font-sans text-[13px] text-stone-400">
                 <MapPin className="h-4 w-4 text-emerald-400 mt-0.5 shrink-0" />
-                <span>São Gonçalo do Rio Abaixo, MG — Brasil</span>
+                <span>Centro, São Gonçalo do Rio Abaixo — MG</span>
               </li>
               <li className="flex items-center gap-2 font-sans text-[13px] text-stone-400">
                 <Mail className="h-4 w-4 text-emerald-400 shrink-0" />
@@ -98,7 +94,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2 font-sans text-[13px] text-stone-400">
                 <Phone className="h-4 w-4 text-emerald-400 shrink-0" />
-                <span>(31) 3800-0000</span>
+                <span>(31) 3820-1800</span>
               </li>
             </ul>
           </div>

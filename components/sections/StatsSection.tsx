@@ -2,13 +2,13 @@
 
 import { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
-import { TreePine, Users, Star, Calendar } from "lucide-react";
+import { Landmark, Users, MapPin, TreePine } from "lucide-react";
 
 const stats = [
-  { icon: TreePine, value: 35000, suffix: " ha", label: "Mata Atlântica preservada", color: "text-emerald-600", bg: "bg-emerald-50", iconBg: "bg-emerald-100" },
-  { icon: Users, value: 12000, suffix: "+", label: "Visitantes por ano", color: "text-blue-600", bg: "bg-blue-50", iconBg: "bg-blue-100" },
-  { icon: Star, value: 4.8, suffix: "/5", label: "Avaliação média", color: "text-amber-600", bg: "bg-amber-50", iconBg: "bg-amber-100", decimal: true },
-  { icon: Calendar, value: 6, suffix: "+", label: "Festivais anuais", color: "text-violet-600", bg: "bg-violet-50", iconBg: "bg-violet-100" },
+  { icon: Landmark, value: 4, suffix: "", label: "Bens tombados como patrimônio", color: "text-amber-600", bg: "bg-amber-50", iconBg: "bg-amber-100" },
+  { icon: Users, value: 12475, suffix: "", label: "Habitantes (estimativa 2025)", color: "text-blue-600", bg: "bg-blue-50", iconBg: "bg-blue-100" },
+  { icon: MapPin, value: 89, suffix: " km", label: "De Belo Horizonte", color: "text-violet-600", bg: "bg-violet-50", iconBg: "bg-violet-100" },
+  { icon: TreePine, value: 500, suffix: "+ ha", label: "Preservados na Estação de Peti", color: "text-emerald-600", bg: "bg-emerald-50", iconBg: "bg-emerald-100" },
 ];
 
 function Counter({ target, suffix, decimal }: { target: number; suffix: string; decimal?: boolean }) {
@@ -63,7 +63,7 @@ export default function StatsSection() {
         </motion.div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-          {stats.map(({ icon: Icon, value, suffix, label, color, bg, iconBg, decimal }, i) => (
+          {stats.map(({ icon: Icon, value, suffix, label, color, iconBg }, i) => (
             <motion.div
               key={label}
               initial={{ opacity: 0, y: 24 }}
@@ -79,7 +79,7 @@ export default function StatsSection() {
                 className={`font-display font-extrabold ${color} mb-1`}
                 style={{ fontSize: "clamp(1.75rem, 4vw, 2.5rem)", letterSpacing: "-0.04em", lineHeight: 1 }}
               >
-                <Counter target={value} suffix={suffix} decimal={decimal} />
+                <Counter target={value} suffix={suffix} />
               </div>
               <p className="font-sans text-[13px] font-medium text-stone-500 leading-snug mt-1">
                 {label}

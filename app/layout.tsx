@@ -30,11 +30,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Discover SGRA — Turismo em São Gonçalo do Rio Abaixo",
   description:
-    "Descubra a beleza natural, o patrimônio histórico e as experiências culturais únicas de São Gonçalo do Rio Abaixo, MG. A plataforma de turismo inteligente do Vale do Rio Doce.",
-  keywords: "São Gonçalo do Rio Abaixo, turismo, Minas Gerais, natureza, cultura, patrimônio, SGRA",
+    "Descubra as igrejas históricas, o memorial do Padre João e a Estação Ambiental de Peti em São Gonçalo do Rio Abaixo, MG. A plataforma de turismo inteligente e patrimônio cultural do município.",
+  keywords: "São Gonçalo do Rio Abaixo, turismo, Minas Gerais, patrimônio, igrejas históricas, Padre João, Estação de Peti, SGRA",
   openGraph: {
     title: "Discover SGRA — Turismo Inteligente",
-    description: "A plataforma de turismo de São Gonçalo do Rio Abaixo",
+    description: "A plataforma de turismo e patrimônio cultural de São Gonçalo do Rio Abaixo",
     type: "website",
   },
 };
