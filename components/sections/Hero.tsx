@@ -16,8 +16,8 @@ export default function Hero() {
       {/* Background */}
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=1920&q=85"
-          alt="Natureza de São Gonçalo do Rio Abaixo"
+          src="/images/attractions/igreja-matriz-2.jpg"
+          alt="Igreja Matriz de São Gonçalo do Amarante, vista aérea"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/35 to-black/65" />
@@ -100,7 +100,7 @@ export default function Hero() {
             transition={{ duration: 0.65, delay: 0.2 }}
             className="font-sans text-base sm:text-lg text-white/75 mb-10 max-w-[500px] leading-[1.72] font-normal"
           >
-            Natureza preservada, patrimônio histórico secular e gastronomia autêntica.
+            Igrejas históricas, memória viva e a natureza preservada da Estação de Peti.
             São Gonçalo do Rio Abaixo espera por você.
           </motion.p>
 
